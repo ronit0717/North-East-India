@@ -1,0 +1,264 @@
+<HTML>
+	<HEAD>
+		<link rel ="stylesheet"
+		type = "text/css"
+		href= "bootstrap.css">
+	  
+		<link rel ="stylesheet"
+		type = "text/css"
+		href= "styles.css">	  
+		</link>
+
+		<script src="jquery-1.12.4.js"></script>
+		<script src="myScript.js"></script>
+		<TITLE> NORTHEAST INDIA </TITLE>
+	
+	</HEAD>
+	
+	
+	<BODY>
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-2"><a href="myWeb.html"><img src="img_1.jpg" width="180" ></a></div> 
+				<div> <a class="col-md-1" href="myWeb.html"><center>HOME</center> </a></div>
+				<div> <a class="col-md-2" href="ArunachalPradesh.html"><center>Arunachal Pradesh </center></a> </div>
+				<div> <a class="col-md-1" href="Assam.html"> <center>Assam </center></a> </div>
+				<div> <a class="col-md-1" href= "Manipur.html"><center>Manipur</center> </a> </div>
+				<div> <a class="col-md-1" href= "Meghalaya.html"><center>Meghalaya</center> </a> </div>
+				<div> <a class="col-md-1" href= "Mizoram.html"> <center>Mizoram</center> </a> </div>
+				<div> <a class="col-md-1" href= "Nagaland.html"> <center>Nagaland</center> </a> </div>
+				<div> <a class="col-md-1" href= "Sikkim.html"> <center>Sikkim</center></a> </div>
+				<div> <a class="col-md-1" href= "Tripura.html"> <center>Tripura</center> </a> </div>	
+
+			</div>
+		</div>
+		
+	<marquee><h1 class="myHead"> <center> NORTH EAST INDIA </center> </h1></marquee>
+
+	<div class="container">
+		<div class="row">
+			
+			
+			<div class="col-md-3">
+				<div>
+					<img id="image1" 
+					class="crop-img img-circle" src="img_2.jpg" alt="A lake at Sela on the way to Tawang in West Kameng district of Arunachal Pradesh" width="304" height="200" title="Arunachal Pradesh"/> 
+				 </div>
+				 <div class="myBold"> 	
+					<center>Arunachal Pradesh</center>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div>
+					<img id="image2" class="crop-img img-circle" src="img_3.jpg" alt="An Indian rhino at Kaziranga National Park" width="304" height="200" title="Assam"/> 
+				</div>
+				<div class="myBold" >
+					<center>Assam</center>
+				</div>	
+			</div>
+			
+			<div class="col-md-3">
+				<div>
+					<img id="image3" class="crop-img img-circle" src="img_4.jpg" alt="Sanamahi temple at Kangla" width="304" height="200" title="Manipur"/> 
+				</div>
+				<div class="myBold"> 	
+					<center>Manipur</center>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div>
+				<img id="image4" class="crop-img img-circle" src="img_5.jpg" alt="7 Sister Falls Cherrapunji Meghalaya" width="304" height="200" title="Meghalaya"/> 
+			    </div>
+				<div class="myBold"> 	
+					<center>Meghalaya</center>
+				</div>
+			</div>
+			
+			</div>
+			<div class="row">
+			
+			<div class="col-md-3">
+				<div>
+					<img id="image5" class="crop-img img-circle" src="img_6.jpg" alt="Chhimtuipui (top) and Tuipui river of Mizoram" width="304" height="200" title="Mizoram"/> 
+				</div>
+				<div class="myBold"> 	
+					<center>Mizoram</center>
+				</div>
+			</div>	
+			
+			
+			<div class="col-md-3">
+				<div>
+				<img id="image6" 
+				class="crop-img img-circle" src="img_7.jpg" alt="Angami tribe festival, Nagaland" width="304" height="200" title="Nagaland"/> 
+				</div>
+				<div class="myBold"> 	
+					<center>Nagaland</center>
+				</div>
+			</div>	
+			
+			
+			<div class="col-md-3">
+				<div>
+					<img id="image7" 
+					class="crop-img img-circle" src="img_8.jpg" alt="Crow's Lake, Sikkim" width="304" height="200" title="Sikkim"/> 
+				</div>
+				<div> 	
+					<center class="myBold">Sikkim</center>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div>
+					<img id="image8" 
+					class="crop-img img-circle" src="img_9.jpg" alt="Ujjayanta palace" width="304" height="200" title="Tripura"/> 
+				</div>
+				<div class="myBold"> 	
+					<center>Tripura</center>
+				</div>
+			</div>
+			
+			
+		</div>
+		<br><hr><br>
+		<!--
+			this is the large image which is
+			on a row of its own. 
+			The code is similar to the last example
+			of the previous module, but I have
+			added a backwards and forwards button
+		-->
+		<center><div class="myBold "id="desc2" ></div></center>
+		<div class="row">
+			<div class="col-md-1">
+				<button id="backward">&lt;</button>
+			</div>
+			<div class="col-md-10"><center>
+				<img id="bigImage" class="large-img" src="img_1.jpg" alt="theBigImage"/></center> 
+			</div>
+			<div class="col-md-1">
+				<button id="forward">&gt;</button>
+			</div>
+		
+			</div>
+	<center><div id="desc" ></div></center>
+
+	<script>
+		// whether the slideshow is paused or not
+		var paused = false;
+
+		// when you click on a thumbnail
+		// it sets the src of the big image
+		// to be the same as the image
+		// you clicked on
+		$(".crop-img").click(function(){
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+			
+			$("#desc").html($(this).attr('alt'));	
+			$("#desc2").html($(this).attr('title'));	
+		});
+
+		// the counter variable that keeps
+		// track of which image you are showing
+		var counter = 8;                                           
+		// virtually click on the current
+		// image to load it into the big image
+ 		$("#image"+counter).click();                         //Represents the first image that loads up in the big image, depends on initial counter value
+
+		
+		
+		
+		
+		// when you click on the backwards
+		// button select the previous image
+		$("#backward").click(function (){
+			// go back one in the counter
+			counter = counter - 1;
+			// if we are below 1 (the first
+			// image) loop round to 4 (the
+			// last image)
+			if(counter < 1){
+				counter = 8;
+			}
+			// virtually click on the current
+			// image to load it into the big image
+			$("#image"+counter).click();
+		});
+
+		// when you click on the backwards
+		// button select the next image
+		$("#forward").click(function (){
+			// go forward one in the counter
+			counter = counter + 1;
+			// if we are above 4 (the last
+			// image) loop round to 1 (the
+			// first image)
+			if(counter > 8){
+				counter = 1;
+			}
+			// virtually click on the current
+			// image to load it into the big image
+			$("#image"+counter).click();
+		});
+
+		// when you click the big image 
+		// toggle pausing. Set paused to 
+		// not paused, i.e. if it is paused
+		// set it to not paused, if it is 
+		// not paused set it to paused
+		$("#bigImage").click(function (){
+			paused = !paused;
+		});
+
+		// set interval makes it move 
+		// forward every 3 second
+		setInterval(function (){
+			// first check if it is paused
+			if(!paused){
+				// virtual click the forward
+				// button
+				$("#forward").click();
+			};
+		}, 3000);
+		
+		
+		
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</BODY>
+
+</HTML>
