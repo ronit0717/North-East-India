@@ -1,0 +1,41 @@
+/* use this to put borders around things... */
+.crop-img{
+  max-height:100%;
+  max-width:100%;
+  width: 75pt;
+  height: 75pt;
+  
+}
+
+.large-img{
+  max-width:100%;
+  width:500ptpt;
+  height: 250pt;
+}
+
+.myBold{
+	font-weight: bold;
+	
+}
+
+.indent{
+	
+	margin-left: 30px;
+}
+
+.myGap{
+	
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.myhead{
+	color: blue;
+	font-family: san-serif;
+	font-weight: bold;
+}
+
+.icon:hover{
+	width: 180pt;
+}
+
